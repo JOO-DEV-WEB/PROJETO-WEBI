@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    cursor: crosshair;
+    display: flex;
+}
+
+#txtPontuação{
+    color: blue;
+    position: absolute;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgb(187, 1, 187);
+    user-select: none;
+    padding: 8px;
+}
+
+.modal{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .5s;
+}
+
+#startModal{
+    opacity: 1;
+    z-index: 1;
+    background-color: #000;
+}
+
+#startContainer{
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 0 20px black inset;
+    background-color: blue;
+    transition: all .5s;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+#startContainer:hover{
+    background-color: #000;
+    box-shadow: 0 0 10px blue;
+    color: blue;
+}
+
+#titulo{
+    text-shadow: 0 0 5px blue;
+    font-size: 40px;
+   
+   
+}
+
+#gameovercontainer{
+    width: 500px;
+    padding: 16px;
+    box-shadow:0 0 5px rgb(0, 0, 255) ;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#gameovercontainer > *{
+    text-shadow: 0 0 8px rgba(21, 21, 241, 0.7);
+    margin: 10px;
+}
+
+hr{
+    padding: 1px;
+    box-shadow: 0 0 5px rgb(0, 0, 255);
+}
+
+#pontuaçãoFinal{
+    margin-top: 20px;
+    font-size: 48px;
+    color: blue;
+}
+
+#escrita{
+    color: blue;
+}
+
+#final{
+    color: blue;
+}
+
+#btnJogardeNovo{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: blue;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#btnJogardeNovo:hover{
+    background-color: #000;
+    box-shadow: 0 0 10px blue;
+    color: blue;
+    
+}

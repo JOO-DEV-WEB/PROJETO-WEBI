@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<body>
+	<p id = "txtPontuação">PONTOS:0</p>
+
+	<div class = "modal" id = "gameoverModal">
+		<div id="gameovercontainer">
+			<h2 id="final">JÁ ERA</h2>
+			<hr>
+			<h1 id = "pontuaçãoFinal">0</h1>
+			<p id="escrita"> TEUS PONTO </p>
+			<button id = "btnJogardeNovo">JOGAR DE NOVO</button>
+		</div>
+	</div>
+
+	<div class = "modal" id="startModal">
+
+		<div id="startContainer">
+			<h1 id="titulo">JOGO THE GAME</h1>
+		</div>
+
+	</div>
+
+	<audio src = "./cantigas/fundo.mp3" id="fundo" loop ></audio>
+	<audio src = "./cantigas/tiro.mp3"></audio>
+	<audio src = "./cantigas/morte.mp3"></audio>
+
+    <canvas></canvas>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
